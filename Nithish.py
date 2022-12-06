@@ -1,24 +1,26 @@
 import streamlit as st
 
 def main_page():
-    st.header('Census Data_cleaning')
+    st.header('Instagram EDA')
     st.subheader('Github link')
-    st.write("https://github.com/Nithish24799/Data_Science/tree/main/Data_analysis/Census_data_cleaning ")#github link
-    st.header("Explaination")
-    st.markdown("""The project i have taken from API and the Census data has
-     District_code,State_name,District_name,Population,Male,Female,Literate,Workers,Male_Workers,Female_Workers,Christians,
-     Sikhs,Buddhists,Jains,Secondary_Education,Higher_Education,Graduate_Education,Age_Group_0_29,Age_Group_30_49,Age_Group_50
-     i have performed data preprocessing like\n
-     1.groupby function\n
-     2.add prefix and suffix to column name\n
-     3.creating and deleting the column\n""")
-    st.markdown("""using pandas library in python and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the india census data according to state-wise
-Need to analyse the data and find the unemployment in statewise  
-\nData_Set link: 
-''')
+    st.write("https://github.com/Nithish24799/ML_project/blob/main/Social_media_guvi_project/EDA%20on%20Instagram.ipynb")#github link
+    st.header("Problem Statement")
+    st.markdown("""1.Are there any correlated features in the given dataset? If yes, state the correlation
+    coefficient of the pair of features which are highly correlated.\n
+    2. What is the frequency distribution of the following features?
+    ○ Influence Score
+    ○ Followers
+    ○ Posts\n
+    3. Which country houses the highest number of Instagram Influencers? Please show the
+    count of Instagram influencers in different countries using barchart.\n
+    4. Who are the top 10 influencers in the given dataset based on the following features
+    ● Followers
+    ● Average likes
+    ● Total Likes\n
+    5. Describe the relationship between the following pairs of features using a suitable graph
+    ● Followers and Total Likes
+    ● Followers and Influence Score""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
 
 def page2():
     st.header("Netflix data")
@@ -31,13 +33,7 @@ def page2():
      1.handling the missing value\n
      2.duplicate handling\n
      3.datetime function\n""")
-    st.markdown("""using pandas library in python and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the Netflix data according to username
-Need to analyse the data and find how many people are subscribed 
-\n Data_Set link:
-''')
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
 
 def page3():
     st.header("Sales insight")
@@ -50,13 +46,8 @@ def page3():
      1.merge the multiple csv to one csv file\n
      2.type casting the datatype\n
      3.use some visualization\n""")
-    st.markdown("""using pandas and matplotlib library in python and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the Sales according to every month 
-Need to analyse the data and find how the sales is for every month \n
-Data_Set link:
-''')
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+    
 def page4():
     st.header("Registration")
     st.subheader('Github link')
@@ -74,12 +65,8 @@ def page4():
      A)Retrive the data with the username itself\n
      B)Provide new password and replace the new password with the 
      usernamme in the file """)
-    st.markdown("""used python code and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-    The project is to create a registration form using python code 
-    with a concept of file handling,The Jupyter notebook link 
-    and full explaination is given in the main page''' )
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+    
 
 def page5():
     st.header("Weather Data")
@@ -92,21 +79,100 @@ def page5():
      1.handling the missing value\n
      2.descriptive statistic\n
      3.datetime function\n""")
-    st.markdown("""using pandas and numpy library in python and you can see the source code on my github account""")
-    st.sidebar.header("Description:")
-    st.sidebar.markdown('''
-The dataset describe the weather data with windspeed,tempature etc,
-Need to analyse the data and find how the tempature for every month
-\nData_Set link:
-''')
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+def page6():
+    st.header("Twitter Sentimental analysis")
+    st.subheader('Github link')
+    st.write("https://github.com/Nithish24799/ML_project/blob/main/Social_media_guvi_project/Twitter_sentimental_analysis.ipynb")#github link
+    st.header("Problem statement")
+    st.markdown("""It contains the following 6 fields:\n
+    1. target: the polarity of the tweet (0 = negative, 2 = neutral, 4 = positive)\n
+    2. ids: The id of the tweet .\n
+    3. date: The date of the tweet (Sat May 16 23:58:44 UTC 2009)\n
+    4. flag: The query. If there is no query, then this value is NO_QUERY.\n
+    5. user: The user that tweeted\n
+    6. text: The text of the tweet.\n
+    Design a classification model that correctly predicts the polarity of the tweets provided in the
+    dataset""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+def page7():
+    st.header("Flight fare price prediction")
+    st.subheader('Github link')
+    st.write("https://github.com/Nithish24799/ML_project/tree/main/Flight_Fare_prediction")#github link
+    st.header("Problem statement")
+    st.markdown("""The Flight fare prediction.\n
+    The feature are Airline,Date_of_Journey,Source,Destination,Route,Dep_Time,Arrival_Time,Duration,Total_Stops,Additional_Info,\n
+    And the price is dependent feature remaining feature are independent.\n
+    Data cleaning process and feature selection are performed in the dataset.\n
+    Also handled the categorical value concept used here is onehotencoding and replace function.\n
+    model used in the project is randomforestregressor.\n
+    The dataset taken from the youtube source Channel name: Skillcate""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+def page8():
+    st.header("Bangalore house price prediction")
+    st.subheader('Github link')
+    st.write("https://github.com/Nithish24799/ML_project/tree/main/Bangalore_price_prediction")#github link
+    st.header("Problem statement")
+    st.markdown("""The Bangalore house pricw prediction.\nThe feature are area_type,availability,location,size,society,total_sqft,bath,balcony,price\n
+    And the price is dependent feature remaining feature are independent\n
+    Data cleaning process and feature selection are performed in the dataset\n
+    Also handled the categorical value concept used here is onehotencoding\n
+    model used in the project is linear regression\n
+    The dataset taken from the youtube source Channel name: Codebasics""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+def page9():
+    st.header("Time series Forecasting")
+    st.subheader('Github link')
+    st.write("https://github.com/Nithish24799/ML_project/tree/main/Time_series_forecasting")#github link
+    st.header("Problem statement")
+    st.markdown("""The oil price prediction based on time series forecasting.\nThe feature are timestamp,Price and these are taken from quandl\n 
+    And the price is dependent feature timestamp feature are independent\n
+    Data cleaning process and feature selection are performed in the dataset\n
+    model used in the project is linear regression\n
+    The dataset taken from the quandl api""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+def page10():
+    st.header("Movie recommendation system")
+    st.subheader('Github link')
+    st.write("https://github.com/Nithish24799/ML_project/tree/main/movie_recommendation")#github link
+    st.header("Problem statement")
+    st.markdown("""Building Movie recommendation system.\nThe feature are genres,keywords,tagline,cast,director.\n
+    Data cleaning process and feature selection are performed in the dataset\n
+    The closet match is finded by difflib libraries\n
+    The netflix movie and the concept are cosine similarity\n
+    The dataset taken from the youtube channel name: datascience love""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
+def page11():
+    st.header("Guvi project")
+    st.subheader('Github link')
+    st.write("https://github.com/Nithish24799/Guvi_project")#github link
+    st.header("Problem statement")
+    st.markdown("""The GUVI institution has given several task to pratice for data science and namely the topics are\n
+    1.Pandas\n
+    2.Numpy\n
+    3.Statistics\n
+    4.visualization\n
+    5.EDA process\n
+    6.Feature selection\n
+    7.Model buliding\n
+    8.data analysis project\n
+    9.data sciencist project and many more project...""")
+    st.markdown("""Reference is taken on the third party API and code is written by Nithish(Aspiring Data Scientist)""")
 
 page_names_to_funcs = {
-    "Census_data": main_page,
+    "Instagram EDA":main_page,
     "Netflix_data": page2,
     "Sales_insight": page3,
     "Registeration_Python": page4,
     "Weather_data": page5,
+    "Twitter Sentimental analysis":page6,
+    "Flight fare price prediction":page7,
+    "Bangalore house price prediction":page8,
+    "Time series forecasting":page9,
+    "Movie recommendation":page10,
+    "Guvi project":page11
 }
-st.sidebar.header("Data_Analyst Project")
-selected_page = st.sidebar.selectbox("Select a Project", page_names_to_funcs.keys())
+st.sidebar.header("Data Science Project")
+selected_page = st.sidebar.selectbox("Select a Project ", page_names_to_funcs.keys())
+st.sidebar.markdown("In Datascience project,some Data analyst work and some Data scientist work and its a combination of analysis and model buliding is there and the reference of dataset for each project is taken from different source.")
 page_names_to_funcs[selected_page]() 
