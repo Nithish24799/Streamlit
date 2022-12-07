@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[24]:
-
+!pip install joblib
 
 import streamlit as st
 import pandas as pd
