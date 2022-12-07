@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[8]:
-
-
-import houseprediction as hp
 import streamlit as st
 
 
