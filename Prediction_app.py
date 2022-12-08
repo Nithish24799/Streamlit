@@ -7,6 +7,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pickle
 import warnings
 warnings.simplefilter("ignore")
 
@@ -14,8 +15,8 @@ warnings.simplefilter("ignore")
 # In[25]:
 
 
-X=joblib.load("x.sav")
-model=joblib.load("model.sav")
+X=pd.read_pickle("x.pkl")
+model=pd.read_pickle("model.pkl")
 
 
 # In[26]:
