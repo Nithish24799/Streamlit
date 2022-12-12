@@ -21,7 +21,7 @@ model=pickle.load(open("model.pkl","rb"))
 
 # In[3]:
 
-def error(sqft,bath,BHK):
+def errors(sqft,bath,BHK):
     ans=sqft*bath*BHK*200
     return ans
 
@@ -49,5 +49,5 @@ if st.button("Calcuate"):
     try:
         st.success(price_predict(location,sqft,bath,BHK))
     except:
-        st.success(ans)
+        st.success(errors(sqft,bath,BHK))
 
