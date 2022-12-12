@@ -22,7 +22,10 @@ model=pickle.load(open("model.pkl","rb"))
 # In[3]:
 
 def errors(sqft,bath,BHK):
-    ans=sqft*bath*BHK*200
+    sq=int(sqft)
+    ba=int(bath)
+    bhk=int(BHK)
+    ans=sq*ba*bhk*200
     return ans
 
 
