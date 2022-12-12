@@ -167,7 +167,7 @@ def page10():
     st.markdown("""The project is taken from the third party API and the code is written by Nithish(Aspiring Data Scientist)""")
 
 page_names_to_funcs = {
-    "Census_data": main_page,
+    "Instagram EDA": main_page,
     "Netflix_data": page2,
     "Sales_insight": page3,
     "Registeration_Python": page4,
