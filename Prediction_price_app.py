@@ -21,6 +21,10 @@ model=pickle.load(open("model.pkl","rb"))
 
 # In[3]:
 
+def error(sqft,bath,BHK):
+    ans=sqft*bath*BHK*200
+    return ans
+
 
 def price_predict(location,sqft,bath,BHK):
     loc_index=np.where(X.columns==location)[0][0]
@@ -45,5 +49,5 @@ if st.button("Calcuate"):
     try:
         st.success(price_predict(location,sqft,bath,BHK))
     except:
-        st.success(sqft*bath*BHK*200)
+        st.success(ans)
 
